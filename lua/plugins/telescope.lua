@@ -1,10 +1,10 @@
 return {
-    'nvim-telescope/telescope.nvim', 
+    'nvim-telescope/telescope.nvim',
 
     tag = '0.1.8',
-    
-    dependencies = { 
-        'nvim-lua/plenary.nvim' 
+
+    dependencies = {
+        'nvim-lua/plenary.nvim'
     },
 
     config = function()
@@ -15,5 +15,5 @@ return {
         vim.keymap.set('n', '<leader>ps', builtin.live_grep, { desc = '[P]roject [S]earch (live grep)' })
         vim.keymap.set('n', '<leader>ht', builtin.help_tags, { desc = '[H]elp [T]ags' })
     end
-    
+
 }
