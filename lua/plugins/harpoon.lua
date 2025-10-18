@@ -1,9 +1,9 @@
 local keys = {
-    { "<M-->", function() require("harpoon"):list():add() end },
-    { "<M-0>", function() require("harpoon").ui:toggle_quick_menu(require("harpoon"):list()) end },
+    { "<leader>a", function() require("harpoon"):list():add() end },
+    { "<C-e>", function() require("harpoon").ui:toggle_quick_menu(require("harpoon"):list()) end },
 }
 for i = 1, 5, 1 do
-    table.insert(keys, { "<M-" .. i .. ">", function() require("harpoon"):list():select(i) end })
+    table.insert(keys, { "<C-" .. i .. ">", function() require("harpoon"):list():select(i) end })
 end
 return {
     "ThePrimeagen/harpoon",
